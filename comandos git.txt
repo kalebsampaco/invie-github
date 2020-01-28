@@ -1,0 +1,20 @@
+git init ------------------------------------------------->crea un repositorio en la carpeta que está
+git init primer_repo(nombre de carpeta a crear)----------->iniciar un repositorio con el nombre de la carpeta que se asigne
+touch archivo.txt ---------------------------------------->crear un archivo
+Vim archivo.txt ------------------------------------------>editar un archivo con Vim
+mkdir segundo_repo --------------------------------------->crear una carpeta
+clear ---------------------------------------------------->limpiar la pantalla
+rm -rf .git ---------------------------------------------->borra el repositorio .git de la carpeta
+git status ----------------------------------------------->verifica si el archivo esta en working directory o no
+git add (nombre del archivo)------------------------------>añade el archivo al staging a espera del commit
+git rm --cached (nombre del archivo) --------------------->quita el archivo del stage
+git add -A ----------------------------------------------->añade todos los rchivos que estan en working a stage
+git rm -f 'nombre el archivo'----------------------------->forzar el borrado de un archivo del working
+git commit -m 'inicializar nuestro landing' -------------->añade el archivo al repositorio git con un mensaje 
+git commit --amend --------------------------------------->concatenar un cambio prebio con uno nuevo, un commit con otro. con -m sobre escribe el mensaje anterior
+git log -------------------------------------------------->revisar el log
+git tag -a(versión anotada) 0.5(versión) -m 'version estable del proyecto'->crea un tag o etiqueta con la versión  y los cambios del archivo
+git tag -l ----------------------------------------------->lista los tag hechos
+git tag 0.3 8db33108...(id del commit hecho)-------------->crear una etiqueta de un commit anterior
+git tag -f(comando para renombrar) -a 0.1 -m 'iniciando proyecyo' 8db33108...(id del commit hecho)-->renombrar un tag
+git tag -d 1.0 ------------------------------------------->borra una etiqueta específica
