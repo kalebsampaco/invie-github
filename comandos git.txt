@@ -18,3 +18,13 @@ git tag -l ----------------------------------------------->lista los tag hechos
 git tag 0.3 8db33108...(id del commit hecho)-------------->crear una etiqueta de un commit anterior
 git tag -f(comando para renombrar) -a 0.1 -m 'iniciando proyecyo' 8db33108...(id del commit hecho)-->renombrar un tag
 git tag -d 1.0 ------------------------------------------->borra una etiqueta específica
+git log --oneline ---------------------------------------->resume log en pocas lineas
+git log --oneline --graph -------------------------------->gráfico de como va avanzando la historia de mi proyecto
+git log -3 ----------------------------------------------->log de los últimos 3 commits
+git log -1 ----------------------------------------------->log del último commit
+git diff 8db33108...(id del commit hecho) ---------------->muestra los cambios hechos en ese commit
+git diff 8db33108 5cd46758jsk90 -------------------------->compara los cambios hechos entre dos commits. dependen del orden
+git reset (--soft --mixed --hard)------------------------->los parametros
+git reset --soft 8db33108--------------------------------->quita los cambios hechos en un commit pero deja los archivos en stage
+git reset --mixed 8db33108 ------------------------------->quita los cambios del commit y envia los archivos al working directory
+git reset --hard 8db33108 -------------------------------->borra todo lo que se encuentre en el repositorio o el stage
