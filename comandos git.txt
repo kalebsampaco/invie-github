@@ -28,3 +28,17 @@ git reset (--soft --mixed --hard)------------------------->los parametros
 git reset --soft 8db33108--------------------------------->quita los cambios hechos en un commit pero deja los archivos en stage
 git reset --mixed 8db33108 ------------------------------->quita los cambios del commit y envia los archivos al working directory
 git reset --hard 8db33108 -------------------------------->borra todo lo que se encuentre en el repositorio o el stage
+git config --global core.editor vim----------------------->editor de texto vim
+git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe' --wait" ---->otro editor dde texto
+------o-------------o---------o-----------------o-----------------o-------------------
+trabajos con ramas
+------o-------------o---------o-----------------o-----------------o-------------------
+git branch responsive-------------------------------------->crear una rama
+git branch -l --------------------------------------------->listar las ramas
+git branch -d x ------------------------------------------->borrar una rama
+git branch -m (nombre de la rama a renombrar) (nuevo nombre) -->renombrar una rama
+git checkout [nombre de la rama] -------------------------->cambiar entre ramas
+git checkout [id del commit]------------------------------->ir a un commit específico y poder crear una rama desde ese commit
+git checkout -b nueva-imagen------------------------------->crea una nueva rama y salta a ella
+git merge [nombre de la rama que se quiere mezclar en la rama principal] --> debe estar en la rama principal o a la que se quiera mezclar
+git checkout -b updateA ----------------------------------->crear una nueva rama y salta a ella
