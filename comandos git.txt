@@ -42,3 +42,11 @@ git checkout [id del commit]------------------------------->ir a un commit espec
 git checkout -b nueva-imagen------------------------------->crea una nueva rama y salta a ella
 git merge [nombre de la rama que se quiere mezclar en la rama principal] --> debe estar en la rama principal o a la que se quiera mezclar
 git checkout -b updateA ----------------------------------->crear una nueva rama y salta a ella
+git rebase updateA ---------------------------------------->reescribir la historia de los commit hasta un cierto punto elegido
+git rebase -i updateA -------------------------------------> rebase interactivo
+git stash -------------------------------------------------> guarda todos los cambios hechos en un estado intermedio
+git stash list --------------------------------------------> lista todos los cambios guardados
+git stash apply ------------------------------------------->aplica el ultimo cambio que guardamos
+git stash apply stash@{0} --------------------------------->aplicar un cambio específico guardado
+git checkout -- index.html -------------------------------->quitar los cambios hechos a un archivo
+git cherry-pick 90cbad8(id del commit hecho) ----------------------------------->pasar un commit que se hizo en una rama equivocada a la correcta
