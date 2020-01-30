@@ -1,2 +1,4 @@
-# invie-github
-Tus mejores guitarras invie-sibles by @kalebsampaco
+# invie-animated
+Web animations course project
+
+live project http://invie.now.sh/
